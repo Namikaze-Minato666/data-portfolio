@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="张志豪的数据分析作品集，展示 SQL、Python、Tableau、商业分析和数据运营相关项目。"
+    />
+    <title>张志豪 | 数据分析作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="主导航">
+        <a class="brand" href="#home" aria-label="返回首页">
+          <span class="brand-mark">Z</span>
+          <span>张志豪</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">首页</a>
+          <a href="#projects">项目</a>
+          <a href="#skills">技能</a>
+          <a href="#about">关于我</a>
+          <a href="#contact">联系方式</a>
+          <button class="theme-toggle" type="button" id="themeToggle" aria-label="切换深色或浅色模式">
+            <span class="theme-icon">◐</span>
+            <span class="theme-text">深色</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Data Analysis Portfolio</p>
+          <h1>张志豪</h1>
+          <p class="hero-title">数据分析 / SQL / Python / Tableau</p>
+          <p class="hero-description">
+            陕西师范大学大数据管理与应用专业本科生，关注电商经营分析、用户行为分析、复购分析、数据可视化与业务指标拆解。熟悉
+            MySQL、Python、Pandas、Tableau，已完成多个数据分析项目并整理至 GitHub。
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://github.com/Namikaze-Minato666" target="_blank" rel="noreferrer">
+              GitHub 主页
+            </a>
+            <a class="btn secondary" href="#projects">查看项目</a>
+            <a class="btn ghost" href="#contact">联系我</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>项目展示</h2>
+          <p>围绕真实数据集完成指标拆解、数据处理、SQL 分析、用户分层与可视化表达。</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-tag">Market Basket</span>
+              <span class="project-index">01</span>
+            </div>
+            <h3>Instacart 用户复购行为与购物篮分析项目</h3>
+            <p class="stack">MySQL、CTE、窗口函数、中间表、Excel、Tableau</p>
+            <p>
+              基于 Instacart Market Basket Analysis 数据集，围绕用户购买行为、购物篮规模、复购规律、商品关联规则和用户分层展开分析。项目处理
+              3,421,083 条订单记录和 32,434,489 条历史订单商品明细记录。
+            </p>
+            <ul>
+              <li>构建用户级、订单级和商品级中间汇总表，降低 3000 万级明细表重复扫描成本。</li>
+              <li>计算整体复购率、购买间隔复购率、订单阶段复购率。</li>
+              <li>构建严格递进的用户行为漏斗。</li>
+              <li>使用 support、confidence、lift 分析商品关联规则。</li>
+              <li>基于购买频率和复购率完成用户分层。</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Namikaze-Minato666/instacart_sql_analysis" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://public.tableau.com/app/profile/.32138180/viz/Instacart_17785782338730/1" target="_blank" rel="noreferrer">Tableau 1</a>
+              <a href="https://public.tableau.com/app/profile/.32138180/viz/Instacart_Dashboard2_17785829352830/sheet8" target="_blank" rel="noreferrer">Tableau 2</a>
+              <a href="https://public.tableau.com/app/profile/.32138180/viz/Instacart_Dashboard3/sheet6" target="_blank" rel="noreferrer">Tableau 3</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-tag">E-Commerce</span>
+              <span class="project-index">02</span>
+            </div>
+            <h3>Olist 巴西电商平台经营分析项目</h3>
+            <p class="stack">MySQL、窗口函数、RFM、Excel、Tableau</p>
+            <p>
+              基于 Olist Brazilian E-Commerce Public Dataset，围绕平台整体经营表现、销售趋势、商品品类、物流履约、用户评分、卖家表现、支付方式和
+              RFM 用户分层展开分析。
+            </p>
+            <ul>
+              <li>构建 GMV、AOV、取消率、平均评分、延迟率等核心经营指标。</li>
+              <li>分析 2017-2018 年月度订单量和 GMV 趋势。</li>
+              <li>从 GMV、订单量、AOV 和评分维度识别核心品类。</li>
+              <li>分析物流延迟与用户评分关系。</li>
+              <li>使用 RFM 模型识别普通用户、流失用户、新客高消费和高价值用户。</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Namikaze-Minato666/olist-sql-analysis" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://public.tableau.com/app/profile/.32138180/viz/666olist/1" target="_blank" rel="noreferrer">Tableau</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-tag">Python EDA</span>
+              <span class="project-index">03</span>
+            </div>
+            <h3>酒店预订取消行为分析项目</h3>
+            <p class="stack">Python、Pandas、NumPy、Matplotlib、Seaborn、Jupyter Notebook</p>
+            <p>
+              基于酒店预订数据集，围绕订单取消行为展开分析，完成原始数据读取、缺失值处理、特征工程、取消率分组统计和可视化分析。
+            </p>
+            <ul>
+              <li>使用 Pandas 处理 119,390 条酒店预订数据。</li>
+              <li>针对 company、agent、country、children 等字段设计差异化缺失值处理策略。</li>
+              <li>构造总入住人数、总入住晚数、是否有儿童、是否通过代理预订等特征。</li>
+              <li>从酒店类型、提前预订天数、客户类型、市场来源、押金类型等维度分析取消率差异。</li>
+              <li>使用 Matplotlib / Seaborn 输出可视化图表。</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Namikaze-Minato666/pandas-hotel-booking-analysis" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>技能结构</h2>
+          <p>从数据提取、清洗建模、指标分析到 BI 看板呈现，覆盖数据分析岗位常见工作流。</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>SQL / MySQL</h3>
+            <div class="tags">
+              <span>JOIN</span><span>GROUP BY</span><span>CTE</span><span>窗口函数</span><span>索引优化</span><span>中间表</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Python 数据分析</h3>
+            <div class="tags">
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>BI 与可视化</h3>
+            <div class="tags">
+              <span>Tableau</span><span>Excel</span><span>Dashboard</span><span>KPI 看板</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>业务分析方法</h3>
+            <div class="tags">
+              <span>GMV</span><span>AOV</span><span>复购率</span><span>留存漏斗</span><span>RFM</span><span>购物篮分析</span><span>用户分层</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>工具</h3>
+            <div class="tags">
+              <span>GitHub</span><span>VS Code</span><span>Jupyter Notebook</span><span>MySQL Workbench</span><span>Codex</span><span>Claude Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>关于我</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            我是陕西师范大学大数据管理与应用专业本科生，正在系统学习 SQL、Python、统计学、机器学习和数据分析项目实践。当前重点方向是数据分析、商业分析和数据运营，已完成电商经营分析、用户复购行为分析和酒店预订取消行为分析等项目。希望通过结构化项目、GitHub
+            作品集和可视化报告展示自己的数据分析能力。
+          </p>
+          <div class="about-list">
+            <span>学校：陕西师范大学</span>
+            <span>专业：大数据管理与应用</span>
+            <span>方向：数据分析 / 商业分析 / 数据运营</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>联系方式</h2>
+          <p>欢迎通过手机或邮件联系，了解项目细节与数据分析实践。</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="contact-item">手机：13271195699</span>
+            <a class="contact-item" href="mailto:1773728958@qq.com">邮箱：1773728958@qq.com</a>
+          </div>
+          <a class="btn primary" href="mailto:1773728958@qq.com">发送邮件</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 张志豪 · Data Analysis Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
